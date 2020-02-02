@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Account registration form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css"/>
+  </head>
+  <body>
+    <div class="main-block">
+        <div style="max-width: 550px;width: 100%;padding: 20px;">
+      <fieldset>
+        <legend>
+          <h3>Personal Details</h3>
+        </legend>
+        <div  class="personal-details">
+          <div>
+            <div><label>Name*</label><input type="text" id="name" name="name" required></div>
+            <div>
+                <label>Gender*</label>
+                <div class="gender">
+                  <input type="radio" value="male" id="male" name="gender" required/>
+                  <label for="male" class="radio">Male</label>
+                  <input type="radio" value="female" id="female" name="gender" required/>
+                  <label for="female" class="radio">Female</label>
+                </div>
+              </div>
+            <div><label>DOB*</label><input type="date" id="DOB" name="name" required></div>
+            <div><label>Date Of Registration*</label><input id="registrationDate" type="date" name="name" required></div>
+            <div><label>Email Id*</label><input type="email" id="email" name="name" required></div>
+            <div><label>Validity</label><input type="date" id="validity" name="name"></div>
+            <div><label>Membership Id</label><input id="membershipId" type="text" name="name"></div>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h3>Contect Details</h3>
+        </legend>
+        <div  class="personal-details">
+          <div>
+            <div><label>Address*</label><input type="text" id="address" name="name" required></div>
+            <div><label>City*</label><input type="text" id="city" name="name" required></div>
+            <div><label>Zip Code*</label><input type="number" max="999999" min="100000" id="zipCode"  name="name" required></div>
+            <div><label>Phon*</label><input type="number" max="9999999999" min="1000000000" id="phoneNo" name="name" required></div>
+            <div>
+                <label>Membership Type*</label>
+                <div id="memberType" class="gender">
+                  <input type="radio" value="stu" id="stu" name="memberType" required/>
+                  <label for="Student" class="radio">Student</label>
+                  <input type="radio" value="fitness" id="fitness" name="memberType" required/>
+                  <label for="Fitness" class="radio">Fitness</label>
+                  <input type="radio" value="sf" id="sf" name="memberType" required/>
+                  <label for="S&F" class="radio">S&F</label>
+                  <input type="radio" value="pt" id="pt" name="memberType" required/>
+                  <label for="PT" class="radio">PT</label>
+                </div>
+              </div>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h3>Terms and Mailing</h3>
+        </legend>
+        <div  class="terms-mailing">
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox"><span>I accept the <a href="https://www.w3docs.com/privacy-policy">Privacy Policy for W3Docs.</a></span>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox"><span>I want to recelve personallzed offers by your site</span>
+          </div>
+      </fieldset>
+      <button type="submit" onclick="submitDate();">Submit</button>
+    </div> 
+    </div>
+    <script src="js/reg.js"></script>
+  </body>
+</html>
